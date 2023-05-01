@@ -7,24 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="AC" HorizontalAlignment="Left" Margin="55,95,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
-        <Button x:Name="btnSeven" Content="7" HorizontalAlignment="Left" Margin="214,95,0,0" VerticalAlignment="Top" Height="60" Width="84"/>
-        <Button x:Name="btnEight" Content="8" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Height="60" Width="84"/>
-        <Button x:Name="btnNine" Content="9" HorizontalAlignment="Left" Margin="500,95,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
-        <Button Content="/" HorizontalAlignment="Left" Margin="630,90,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
-        <Button x:Name="btnFour" Content="4" HorizontalAlignment="Left" Margin="213,0,0,0" VerticalAlignment="Center" Height="60" Width="85"/>
-        <Button x:Name="btnFive" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60" Width="85"/>
-        <Button x:Name="btnSix1" Content="6" HorizontalAlignment="Left" Margin="500,0,0,0" VerticalAlignment="Center" Height="60" Width="85"/>
-        <Button Content="*" HorizontalAlignment="Left" Margin="630,183,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
+        <Button x:Name="btnClear" Content="AC" HorizontalAlignment="Left" Margin="55,95,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
+        <Button x:Name="btnSeven" Content="7" HorizontalAlignment="Left" Margin="214,95,0,0" VerticalAlignment="Top" Height="60" Width="84" Click="btnSeven_Click"/>
+        <Button x:Name="btnEight" Content="8" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Height="60" Width="84" Click="btnEight_Click"/>
+        <Button x:Name="btnNine" Content="9" HorizontalAlignment="Left" Margin="500,95,0,0" VerticalAlignment="Top" Height="60" Width="85" Click="btnNine_Click"/>
+        <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" Margin="630,90,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
+        <Button x:Name="btnFour" Content="4" HorizontalAlignment="Left" Margin="213,0,0,0" VerticalAlignment="Center" Height="60" Width="85" Click="btnFour_Click"/>
+        <Button x:Name="btnFive" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60" Width="85" Click="btnFive_Click"/>
+        <Button x:Name="btnSix1" Content="6" HorizontalAlignment="Left" Margin="500,0,0,0" VerticalAlignment="Center" Height="60" Width="85" Click="btnSix1_Click"/>
+        <Button x:Name="btnPlus" Content="*" HorizontalAlignment="Left" Margin="630,183,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
         <Button x:Name="btnOne" Content="1" HorizontalAlignment="Left" Margin="213,274,0,0" VerticalAlignment="Top" Height="60" Width="85" Click="btnOne_Click"/>
-        <Button x:Name="btnTwo" Content="2" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
-        <Button x:Name="btnThree" Content="3" HorizontalAlignment="Left" Margin="500,274,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="630,274,0,0" VerticalAlignment="Top" Height="60" Width="85" RenderTransformOrigin="0.786,-0.241"/>
-        <Button Content="." HorizontalAlignment="Left" Margin="213,365,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
-        <Button x:Name="btnZero" Content="0" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
-        <Button Content="=" HorizontalAlignment="Left" Margin="500,365,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="630,360,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
-        <TextBlock HorizontalAlignment="Left" Height="62" Margin="97,23,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="598"/>
+        <Button x:Name="btnTwo" Content="2" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" Height="60" Width="85" Click="btnTwo_Click"/>
+        <Button x:Name="btnThree" Content="3" HorizontalAlignment="Left" Margin="500,274,0,0" VerticalAlignment="Top" Height="60" Width="85" Click="btnThree_Click"/>
+        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="630,274,0,0" VerticalAlignment="Top" Height="60" Width="85" RenderTransformOrigin="0.786,-0.241"/>
+        <Button x:Name="btnDot" Content="." HorizontalAlignment="Left" Margin="213,365,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
+        <Button x:Name="btnZero" Content="0" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Height="60" Width="85" Click="btnZero_Click"/>
+        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="500,365,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="630,360,0,0" VerticalAlignment="Top" Height="60" Width="85"/>
+        <TextBlock x:Name="txtNumber" HorizontalAlignment="Left" Height="62" Margin="97,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="598"/>
 
     </Grid>
 </Window>
