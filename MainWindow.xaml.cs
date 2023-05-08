@@ -25,6 +25,7 @@ namespace Calculator
         public MainWindow()
         {
             InitializeComponent();
+            btnPercent.Click += btnPercent_Click;
         }
 
         private void btnOne_Click(object sender, RoutedEventArgs e)
@@ -124,6 +125,23 @@ namespace Calculator
             operators = -1;
         }
 
+        private void btnPercent_Click(object sender, RoutedEventArgs e)
+        {
+            float number = Convert.ToSingle(txtNumber.Text);
+            float result = number / 10;
+            txtNumber.Text = string.Format("{0:0.##########}", result);
+        }
+
+        private void btnBackspace_Click(object sender, RoutedEventArgs e)
+        {
+            string input = txtNumber.Text;
+            if (!string.IsNullOrEmpty(input))
+            {
+                input = input.Substring(0, input.Length - 1);
+                txtNumber.Text = input;
+            }
+        }
+
         private void btnEqual_Click(object sender, RoutedEventArgs e)
         {
             float finalResults = 0f;
@@ -144,7 +162,7 @@ namespace Calculator
                     finalResults = firstNumber / secondNumber;
                     break;
             }
-            txtNumber.Text = string.Format("{0:0.##########}", finalResults);
+            txtNumber.Text = string.Format("{0:0#}", finalResults);
 
             firstNumber = 0f;
             secondNumber = 0f;
